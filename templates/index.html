@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letras de Músicas</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <table class="pagina" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+            <td class="cabecalho">
+                <h1>Letras de Músicas</h1>
+                <p class="subtitulo">um pequeno arquivo de letras :D</p>
+            </td>
+        </tr>
+
+        <tr><td class="linha"></td></tr>
+
+        <tr>
+            <td class="conteudo">
+                <form class="campo" action="" method="GET">
+                    <table cellpadding="3" cellspacing="0" align="center">
+                        <tr>
+                            <td class="rotulo">Música</td>
+                            <td><input type="text" class="input" name="Musica"></td>
+                        </tr>
+                        <tr>
+                            <td class="rotulo">Banda</td>
+                            <td><input type="text" class="input" name="Banda"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <button class="botao" type="submit">Buscar</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+
+                {% if letra %}
+                <div class="separador"></div>
+                <div class="letra">
+                    <pre>{{ letra }}</pre>
+                </div>
+                {% endif %}
+            </td>
+        </tr>
+
+        <tr><td class="linha"></td></tr>
+
+        <tr>
+            <td class="rodape">
+                <p>Feito por Thales Kuroishi</p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
