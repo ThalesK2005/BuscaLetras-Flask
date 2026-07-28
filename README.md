@@ -25,3 +25,8 @@ Com a letra salva na memória, o Flask usa o `render_template` para devolver a p
 - **Requests:** Requisições HTTP para a API.
 - **Jinja2:** Renderização dinâmica de variáveis no front-end.
 - **HTML:** Estruturação da interface.
+
+## Teste
+Hospedei o site no meu servidor, caso queira testar :D
+
+link: https://buscar-letras.ai-uta.online/
